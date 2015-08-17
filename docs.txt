@@ -1,0 +1,27 @@
+1. Generate Express Structure | hogan templating | css less
+  express <projectname> --hogan -c less
+
+2. Install Node Modules
+  npm install
+
+3. Install Grunt
+  npm install grunt --save-dev
+  add Gruntfile.js
+
+
+
+
+4. Start Nodemon - good while development
+  nodemon ./bin/www 
+
+6. Run pm2 - for live
+	pm2 start app.js
+
+7. Node mongoose https://www.youtube.com/watch?v=5e1NEdfs4is
+   Install 
+   		npm install -S mongoose
+   		   - note: use -S to include it in package.json
+   	Require Mongoose in app.js
+   		var mongoose = require('mongoose');
+   	Connect
+   		mongoose.connect('mongodb://localhost/mma');
